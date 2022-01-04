@@ -5,17 +5,22 @@ import React, { Component } from 'react';
 import Home from './components/Home';
 import Location from './components/Location';
 import About from './components/About';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
-      <main>
+  <div>
+ 
+      <BrowserRouter>  
+      <Navbar />
           <Switch>
           <Route path="/" component={Home} exact />
           <Route path='/Location' component={Location} />
-          <Route path='/' component={About} />
+          <Route path='/about' component={About} />
           </Switch>
-      </main>
+      </BrowserRouter>
+    </div>
   )
 }
 

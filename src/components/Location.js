@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 
 
-function App() {
+function Location() {
     return (
        <div>Location Page</div>
     )
